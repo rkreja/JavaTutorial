@@ -6,7 +6,6 @@ public class Phone {
 	
 
 	
-	
 	//below are my methods
 	
 	
@@ -19,9 +18,11 @@ public class Phone {
 		System.out.println("calling..."+number);
 	}
 	
-	public void text() {
-		System.out.println("texting...unknown");
+	public void groupSms(int[] numbers, String msg) {
+		System.out.println("Sending message: "+ msg + " . to: "+ numbers[4]);
 	}
+	
+
 	
 	
 	public void showModel() {
