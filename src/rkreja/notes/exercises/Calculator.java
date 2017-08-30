@@ -1,4 +1,4 @@
-package rkreja.notes;
+package rkreja.notes.exercises;
 
 import java.util.Scanner;
 
