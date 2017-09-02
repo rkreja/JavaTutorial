@@ -3,29 +3,27 @@ package oop;
 import java.util.ArrayList;
 
 public class Phone {
-	private String model;	
+	private String model="iphone7";	
+	private ArrayList<String> contacts = new ArrayList<>();
 	private boolean isGpsEnabled=false;
 	private boolean isBluetoothEnabled=false;
 	private boolean isFaceDetectionEnabled=false;
 	private boolean isPaymentCapable = false;
-	
-	
-	private ArrayList<String> contacts = new ArrayList<>();
 	//below are my methods
 	
-	public Phone(String modelName, boolean isGpsEnabled, boolean isBluetoothEnabled, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
-		this.model=modelName;
+
+	
+	public  Phone(String model, boolean isGpsEnabled, boolean isBluetoothEnabled, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
+		this.model=model;
 		this.isGpsEnabled=isGpsEnabled;
 		this.isBluetoothEnabled=isBluetoothEnabled;
 		this.isFaceDetectionEnabled=isFaceDetectionEnabled;
 		this.isPaymentCapable=isPaymentCapable;
-//		System.out.println("I am going to create an object with "+ modelName);
-		
-		
 	}
 	
-
-	public void settings() {
+	
+ 	public void settings() {
+ 		System.out.println("Settings for: "+ this.model);
 		System.out.println("- Display");
 		System.out.println("- Privacy");
 		System.out.println("- Message");
@@ -52,7 +50,6 @@ public class Phone {
 		
 		
 	}
-
 	
 	
 	public void addContact(String name) {
@@ -65,10 +62,15 @@ public class Phone {
 	
 	public void showContacts() {
 		
-		
-		for(int i=0;i<contacts.size();i++){
-			System.out.println(i + ". "+ contacts.get(i));
+		if(contacts.size()>=1) {
+			System.out.println("You have following contact in your phonebook");
+			for(int i=0;i<contacts.size();i++){
+				System.out.println(i + ". "+ contacts.get(i));
+			}
+		}else {
+			System.out.println("Phonebook is empty");
 		}
+		
 	
 	
 	}
