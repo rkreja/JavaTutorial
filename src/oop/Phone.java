@@ -3,22 +3,18 @@ package oop;
 import java.util.ArrayList;
 
 public class Phone {
-	private String model="iphone7";	
+	String model="iphone7";	
 	private ArrayList<String> contacts = new ArrayList<>();
-	private boolean isGpsEnabled=false;
-	private boolean isBluetoothEnabled=false;
-	private boolean isFaceDetectionEnabled=false;
-	private boolean isPaymentCapable = false;
+
+
+
 	//below are my methods
 	
-
 	
-	public  Phone(String model, boolean isGpsEnabled, boolean isBluetoothEnabled, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
+	
+	public  Phone(String model) {
 		this.model=model;
-		this.isGpsEnabled=isGpsEnabled;
-		this.isBluetoothEnabled=isBluetoothEnabled;
-		this.isFaceDetectionEnabled=isFaceDetectionEnabled;
-		this.isPaymentCapable=isPaymentCapable;
+
 	}
 	
 	
@@ -27,27 +23,8 @@ public class Phone {
 		System.out.println("- Display");
 		System.out.println("- Privacy");
 		System.out.println("- Message");
-		
-		if(isGpsEnabled==true) {
-			System.out.println("- GPS");
-		}
-		if(isBluetoothEnabled==true) {
-			System.out.println("- Bluetooth");
-		}
-		
-		System.out.println("- Photos");
 		System.out.println("- Call");
-		System.out.println("- Sounds");
-		
-		if(isFaceDetectionEnabled==true) {
-			System.out.println("- Face Detection");
-		}
-		
-		if(isPaymentCapable==true) {
-			System.out.println("- Payment");
-		}
-		
-		
+		System.out.println("- Sounds");	
 		
 	}
 	
@@ -75,12 +52,9 @@ public class Phone {
 	
 	}
 	
-	private void call(){
-		
-		System.out.println("calling...unknown");
-	}
+
 	
-	private void call(int number){
+	public void call(int number){
 		System.out.println("calling..."+number);
 	}
 	
