@@ -2,15 +2,16 @@ package oop;
 
 import java.util.ArrayList;
 
-public class Phone {
-	String model="iphone7";	
+public  class Phone {
+	private String model="iphone7";	
 	private ArrayList<String> contacts = new ArrayList<>();
-
 
 
 	//below are my methods
 	
-	
+	public String getModel() {
+		return this.model;
+	}
 	
 	public  Phone(String model) {
 		this.model=model;

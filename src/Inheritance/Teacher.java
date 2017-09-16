@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Teacher extends Male{
+public class Teacher extends Human{
 
 	
 	

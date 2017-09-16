@@ -1,7 +1,17 @@
 package Inheritance;
 
-public class Doctor extends Male{
+import oop.SmartPhone;
 
+public class Doctor extends Human{
+	
+	
+	private SmartPhone phone=new SmartPhone("iphone 7", false, true);
+	
+	
+	public SmartPhone getPhone() {
+		return this.phone;
+	}
+	
 	public Doctor(String name) {
 		super(name);
 	}

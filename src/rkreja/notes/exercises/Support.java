@@ -6,8 +6,7 @@ public class Support {
 
 	public static void main(String[] args) throws InterruptedException  {
 		
-		
-		
+	
 		
 		String ss ="Ami banglay gaan gai";
 		

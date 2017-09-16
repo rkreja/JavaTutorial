@@ -9,7 +9,7 @@ public class SmartPhone extends Phone{
 	
 	
 	
-	public SmartPhone(String model, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
+	public  SmartPhone(String model, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
 		super(model);
 		this.isFaceDetectionEnabled=isFaceDetectionEnabled;
 		this.isPaymentCapable=isPaymentCapable;
@@ -18,7 +18,7 @@ public class SmartPhone extends Phone{
 	}
 
 	public void takePhoto() {
-		System.out.println(super.model+ " Taking picture using camera.");
+		System.out.println(getModel()+ " Taking picture using camera.");
 	}
 	
 

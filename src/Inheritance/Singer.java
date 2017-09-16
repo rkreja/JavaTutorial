@@ -1,8 +1,15 @@
 package Inheritance;
 
-public class Singer extends Male{
+import oop.NonSmartPhone;
+
+public class Singer extends Human{
+	
+	private NonSmartPhone phone = new NonSmartPhone("Nokia 3310");
 	
 	
+	public NonSmartPhone getPhone() {
+		return this.phone;
+	}
 	public Singer(String name) {
 		super(name);
 

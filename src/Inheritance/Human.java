@@ -1,7 +1,23 @@
 package Inheritance;
 
+import oop.Phone;
+
 public class Human {
+	
 	private String name;
+	private Phone phone=null;
+	
+	
+	public void setPhone(Phone phone) {
+		this.phone=phone;
+	}
+	
+	public Phone getPhone() {
+			
+		return this.phone;
+	}
+	
+	
 	
 	
 	
