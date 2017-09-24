@@ -1,4 +1,4 @@
-import oop.Phone;
+import com.timeandtraining.phone.Phone;
 
 public class CompilerTest {
 

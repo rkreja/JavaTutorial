@@ -1,4 +1,4 @@
-package oop;
+package com.timeandtraining.phone;
 
 public class SmartPhone extends Phone{
 	
@@ -9,7 +9,7 @@ public class SmartPhone extends Phone{
 	
 	
 	
-	public  SmartPhone(String model, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
+	 SmartPhone(String model, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
 		super(model);
 		this.isFaceDetectionEnabled=isFaceDetectionEnabled;
 		this.isPaymentCapable=isPaymentCapable;

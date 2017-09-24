@@ -1,4 +1,4 @@
-package rkreja.notes.exercises;
+package com.timeandtraining.exercise;
 
 import java.util.concurrent.ThreadLocalRandom;
 

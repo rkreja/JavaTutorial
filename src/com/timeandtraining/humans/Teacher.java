@@ -1,4 +1,4 @@
-package Inheritance;
+package com.timeandtraining.humans;
 
 public class Teacher extends Human{
 

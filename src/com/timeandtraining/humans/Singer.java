@@ -1,15 +1,8 @@
-package Inheritance;
-
-import oop.NonSmartPhone;
+package com.timeandtraining.humans;
 
 public class Singer extends Human{
 	
-	private NonSmartPhone phone = new NonSmartPhone("Nokia 3310");
-	
-	
-	public NonSmartPhone getPhone() {
-		return this.phone;
-	}
+
 	public Singer(String name) {
 		super(name);
 

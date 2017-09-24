@@ -1,26 +1,28 @@
-package Inheritance;
+package com.timeandtraining.humans;
 
-import oop.Phone;
+import com.timeandtraining.phone.SmartPhone;
 
 public class Human {
 	
 	private String name;
-	private Phone phone=null;
+	private SmartPhone phone;
 	
+		
 	
-	public void setPhone(Phone phone) {
-		this.phone=phone;
+	public SmartPhone getPhone() {
+		
+		if(this.phone==null) {
+			System.out.println("Ooops "+this.name+" doesn't own any phone");
+			System.exit(1);
+		}
+		
+		return phone;
 	}
-	
-	public Phone getPhone() {
-			
-		return this.phone;
+
+	public void setPhone(SmartPhone phone) {
+		this.phone = phone;
 	}
-	
-	
-	
-	
-	
+
 	public String getName() {
 		return name;
 	}
