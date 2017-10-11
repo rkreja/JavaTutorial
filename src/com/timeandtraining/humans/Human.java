@@ -7,6 +7,15 @@ public class Human {
 	private String name;
 	private SmartPhone phone;
 	
+	
+	public Human(String name) {
+		this.name=name;
+	}
+
+
+
+	
+	
 		
 	
 	public SmartPhone getPhone() {
@@ -27,9 +36,7 @@ public class Human {
 		return name;
 	}
 
-	public Human(String name) {
-		this.name=name;
-	}
+
 	
 	public void walk() {
 		System.out.println("walk method called from super class");
